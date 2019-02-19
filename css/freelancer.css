@@ -135,7 +135,7 @@ header {
 }
 .navbar-custom .navbar-brand:after{
     content: 'Geist';
-    color: #148E99;
+    color: #FCB21F;
 }
 
 .img-centered {
@@ -454,9 +454,9 @@ footer .footer-below {
 }
 
 .btn-outline {
-    color: #fff;
+    color: #FCB21F;
     font-size: 20px;
-    border: 2px solid #fff;
+    border: 2px solid #FCB21F;
     background: 0 0;
     transition: all .3s ease-in-out;
     margin-top: 15px
