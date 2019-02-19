@@ -71,8 +71,20 @@ hr.star-primary {
     margin: 25px auto 30px
 }
 
+hr.star-light-sm,
+hr.star-primary-sm {
+    padding: 0;
+    border: none;
+    border-top: solid 2px;
+    text-align: center;
+    max-width: 250px;
+    margin: 25px auto 30px
+}
+
 hr.star-light:after,
-hr.star-primary:after {
+hr.star-primary:after,
+hr.star-light-sm:after,
+hr.star-primary-sm:after{
     content: "\f132";
     font-family: FontAwesome;
     display: inline-block;
@@ -260,6 +272,7 @@ section.success {
 }
 .section-title {
     transition: all .2s ease-in-out;
+    color: #fff;
 }
 .section-title:focus{
     transform: scale(1.1);
@@ -278,6 +291,9 @@ section.success {
 #skills .skills-item .caption {
     color: #fff;
     text-decoration: none;
+    margin: 0 0 15px;
+    right: 0;
+    text-align:center;
 }
 #skills .skills-item .caption:hover{
     color: #FCB21F;
