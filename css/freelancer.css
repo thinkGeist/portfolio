@@ -8,10 +8,29 @@
 .color3 {color: #554640}
 .color4 {color: #A9DDD6}
 
+.color-primary-0 { color: #148E99 }	/* Main Primary color */
+.color-primary-1 { color: #1C1E1E }
+.color-primary-2 { color: #1C1E1E }
+.color-primary-3 { color: #00D1E5 }
+.color-primary-4 { color: #00D1E5 }
+
+.color-secondary-1-0 { color: #FCB21F }	/* Main Secondary color (1) */
+.color-secondary-1-1 { color: #31302E }
+.color-secondary-1-2 { color: #31302E }
+.color-secondary-1-3 { color: #FFAA00 }
+.color-secondary-1-4 { color: #FFAA00 }
+
+.color-secondary-2-0 { color: #FC381F }	/* Main Secondary color (2) */
+.color-secondary-2-1 { color: #312E2E }
+.color-secondary-2-2 { color: #312E2E }
+.color-secondary-2-3 { color: #FF1E00 }
+.color-secondary-2-4 { color: #FF1E00 }
+
 
 body {
     font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    overflow-x: hidden
+    overflow-x: hidden;
+    background-color: #31302E;
 }
 
 p {
@@ -27,7 +46,7 @@ a.active,
 a:active,
 a:focus,
 a:hover {
-    color: #4F6D7A;
+    color: #148E99;
     outline: 0
 }
 
@@ -74,17 +93,17 @@ hr.star-light {
 }
 
 hr.star-light:after {
-    background-color: #4F6D7A;
+    background-color: #148E99;
     color: #fff
 }
 
 hr.star-primary {
-    border-color: #554640
+    border-color: #1C1E1E
 }
 
 hr.star-primary:after {
     background-color: #fff;
-    color: #554640
+    color: #1C1E1E
 }
 
 .navbar-custom .navbar-brand,
@@ -94,7 +113,17 @@ hr.star-primary:after {
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-nav li a,
 header {
+
     color: #fff
+}
+
+.navbar-custom .navbar-brand:before{
+    content: 'think';
+    color: #fff;
+}
+.navbar-custom .navbar-brand:after{
+    content: 'Geist';
+    color: #148E99;
 }
 
 .img-centered {
@@ -103,7 +132,7 @@ header {
 
 header {
     text-align: center;
-    background: #4F6D7A
+    background: #148E99
 }
 
 header .container {
@@ -141,7 +170,7 @@ header .intro-text .skills {
 }
 
 .navbar-custom {
-    background: #554640;
+    background: #1C1E1E;
     font-weight: 700;
     border: none
 }
@@ -155,7 +184,7 @@ header .intro-text .skills {
 }
 
 .navbar-custom .navbar-nav li a:hover {
-    color: #4F6D7A;
+    color: #148E99;
     outline: 0
 }
 
@@ -169,7 +198,7 @@ header .intro-text .skills {
 .navbar-custom .navbar-nav li.active a:focus,
 .navbar-custom .navbar-nav li.active a:hover {
     color: #fff;
-    background: #4F6D7A
+    background: #148E99
 }
 
 .navbar-custom .navbar-toggle {
@@ -181,9 +210,9 @@ header .intro-text .skills {
 
 .navbar-custom .navbar-toggle:focus,
 .navbar-custom .navbar-toggle:hover {
-    background-color: #4F6D7A;
+    background-color: #148E99;
     color: #fff;
-    border-color: #4F6D7A
+    border-color: #148E99
 }
 
 @media (min-width:768px) {
@@ -217,7 +246,7 @@ section h2 {
 }
 
 section.success {
-    background: #4F6D7A;
+    background: #148E99;
     color: #fff
 }
 
@@ -229,15 +258,42 @@ section.success {
         padding-top: 75px
     }
 }
+.section-title {
+    transition: all .2s ease-in-out;
+}
+.section-title:focus{
+    transform: scale(1.1);
+}
+#skills .grow {
+    transition: all .2s ease-in-out;
+}
+#skills .grow:hover{
+    transform: scale(1.1);
+}
 #skills .skills-item {
     margin: 0 0 15px;
     right: 0;
     text-align:center;
 }
+#skills .skills-item .caption {
+    color: #fff;
+    text-decoration: none;
+}
+#skills .skills-item .caption:hover{
+    color: #FCB21F;
+}
+
 #skills .skills-item .skills-icon{
     font-size: 50pt;
-    color: #554640;
 }
+
+#skills .skills-item .skills-link {
+    display: block;
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto
+}
+
 
 #portfolio .portfolio-item {
     margin: 0 0 15px;
@@ -352,7 +408,7 @@ section.success {
 }
 
 .floating-label-form-group-with-focus label {
-    color: #4F6D7A
+    color: #148E99
 }
 
 form .row:first-child .floating-label-form-group {
@@ -369,7 +425,7 @@ footer h3 {
 
 footer .footer-above {
     padding-top: 50px;
-    background-color: #554640
+    background-color: #1C1E1E
 }
 
 footer .footer-col {
@@ -378,7 +434,7 @@ footer .footer-col {
 
 footer .footer-below {
     padding: 25px 0;
-    background-color: #233140
+    background-color: #1C1E1E
 }
 
 .btn-outline {
@@ -394,7 +450,7 @@ footer .footer-below {
 .btn-outline:active,
 .btn-outline:focus,
 .btn-outline:hover {
-    color: #4F6D7A;
+    color: #148E99;
     background: #fff;
     border: 2px solid #fff
 }
@@ -410,8 +466,8 @@ footer .footer-below {
 
 .btn-primary {
     color: #fff;
-    background-color: #554640;
-    border-color: #554640;
+    background-color: #1C1E1E;
+    border-color: #1C1E1E;
     font-weight: 700
 }
 
@@ -440,19 +496,19 @@ fieldset[disabled] .btn-primary.active,
 fieldset[disabled] .btn-primary:active,
 fieldset[disabled] .btn-primary:focus,
 fieldset[disabled] .btn-primary:hover {
-    background-color: #554640;
-    border-color: #554640
+    background-color: #1C1E1E;
+    border-color: #1C1E1E
 }
 
 .btn-primary .badge {
-    color: #554640;
+    color: #1C1E1E;
     background-color: #fff
 }
 
 .btn-success {
     color: #fff;
-    background-color: #4F6D7A;
-    border-color: #4F6D7A;
+    background-color: #148E99;
+    border-color: #148E99;
     font-weight: 700
 }
 
@@ -481,12 +537,12 @@ fieldset[disabled] .btn-success.active,
 fieldset[disabled] .btn-success:active,
 fieldset[disabled] .btn-success:focus,
 fieldset[disabled] .btn-success:hover {
-    background-color: #4F6D7A;
-    border-color: #4F6D7A
+    background-color: #148E99;
+    border-color: #148E99
 }
 
 .btn-success .badge {
-    color: #4F6D7A;
+    color: #148E99;
     background-color: #fff
 }
 
@@ -521,6 +577,29 @@ fieldset[disabled] .btn-success:hover {
 .scroll-top .btn:focus {
     outline: 0
 }
+.mini-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1050;
+    width: 600px;
+    max-width: 100%;
+
+    height: 400px;
+    max-height: 100%;
+}
+.skills-modal .modal-content {
+    border-radius: 0;
+    background-clip: padding-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    min-height: 100%;
+    padding: 50px 0;
+    text-align: center;
+    float:left;
+}
 
 .portfolio-modal .modal-content {
     border-radius: 0;
@@ -548,8 +627,8 @@ fieldset[disabled] .btn-success:hover {
 
 .portfolio-modal .close-modal {
     position: absolute;
-    width: 75px;
-    height: 75px;
+    width: 20px;
+    height: 20px;
     background-color: transparent;
     top: 25px;
     right: 25px;
@@ -564,7 +643,7 @@ fieldset[disabled] .btn-success:hover {
     height: 75px;
     width: 1px;
     margin-left: 35px;
-    background-color: #554640;
+    background-color: #1C1E1E;
     transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
@@ -574,7 +653,7 @@ fieldset[disabled] .btn-success:hover {
 .portfolio-modal .close-modal .lr .rl {
     height: 75px;
     width: 1px;
-    background-color: #554640;
+    background-color: #1C1E1E;
     transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
