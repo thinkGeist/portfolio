@@ -338,6 +338,7 @@ footer .footer-below {
   background-color: #2C3E50;
   border-color: #2C3E50;
   font-weight: 700;
+  padding: 10;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -508,4 +509,7 @@ fieldset[disabled] .btn-success.active {
 .portfolio-modal .modal-backdrop {
   opacity: 0;
   display: none;
+}
+.p-10 {
+ padding: 10
 }

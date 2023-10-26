@@ -732,3 +732,7 @@ fieldset[disabled] .btn-success:hover {
     opacity: 0;
     display: none
 }
+
+.pr-10 {
+    padding-right: 10px;
+}
